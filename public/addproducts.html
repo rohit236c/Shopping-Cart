@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./jquery/jquery.js"></script>
+    <script src="./jquery/common.js"></script>
+    <script src="./jquery/addproducts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+<form>
+        <h3 class="text-center p-4">ADD products</h3>
+        <div class="form-group">
+        <label><b>Product Name</b></label>
+        <input type="text" class="form-control col-6" id="product-name" placeholder="product-name">
+        </div>
+        <div class="form-group">
+        <label><b>Product Price</b></label>
+        <input type="number" class="form-control col-6" id="product-price" placeholder="product-price">
+        </div>   
+        <div class="form-group">
+        <label><b>Product Quantity</b></label>
+        <input type="number" class="form-control col-6" id="product-quantity" min="1" max="20" placeholder="product-quantity">
+        </div>
+        <div>
+                <label><b>Vendor Name</b></label>
+        </div>
+        <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Name</label>
+        </div>
+        <select class="custom-select col-5" id="select">
+          <option>abc</option>
+        </select>
+
+
+        </div>
+    </form>
+    <button type="submit" id="add"class="btn btn-primary">Submit</button>
+</div>    
+</body>
+</html>
